@@ -22,15 +22,28 @@ This project is structured into **five demo files**, where each demo introduces 
 ```
 Car-Rental-System/
 │
-├── demo1.cpp       # Basic blueprint implementation
-├── demo2.cpp       # Added new OOP concepts
-├── demo3.cpp       # Extended functionality
-├── demo4.cpp       # Further refinements
-├── demo5.cpp       # Final integrated system
+├── src/                         
+│   ├── demo01.cpp               # Demo 1 - Initial blueprint implementation
+│   ├── demo02.cpp               # Demo 2 - Added classes & encapsulation
+│   ├── demo03.cpp               # Demo 3 - Added inheritance features
+│   ├── demo04.cpp               # Demo 4 - Extended booking & billing
+│   ├── demo05.cpp               # Demo 5 - Near final with file handling
+│   ├── Project_Version_1.cpp    # Version 1 - Base working version
+│   ├── Project_Version_2.cpp    # Version 2 - Intermediate improved version
+│   ├── Project_Version_3.cpp    # Version 3 - Pre-final version
+│   └── Car_Rental_System.cpp    # Final integrated system (main project file)
 │
-├── booking_summary.txt   # Auto-generated booking summary
-├── main.cpp              # Main project file
-└── README.md             # Project documentation
+├── data/
+│   ├── booking_summary.txt      # Auto-generated booking summary (latest booking)
+│   └── customers.txt            # Stores all customer records
+│
+├── website/                     # Web front-end (future)
+│   ├── index.html               # Landing page
+│   ├── style.css                # Styling
+│   └── script.js                # Functionality / logic
+│
+└── README.md                    # Main project documentation
+
 ```
 
 ---
@@ -86,7 +99,7 @@ Made with 💻 and ❤️ by -
 ---
 
 ## 🏆 Acknowledgements
+- C++ OOP concepts: **Encapsulation, Inheritance, Polymorphism**  
+- **File handling** for generating booking summaries and customer logs  
+- Hands-on implementation for a better understanding of **Object-Oriented Programming**
 
-* C++ OOP concepts (Encapsulation, Inheritance, Polymorphism)
-* File handling for generating summaries
-* Hands-on implementation for better understanding of OOP
