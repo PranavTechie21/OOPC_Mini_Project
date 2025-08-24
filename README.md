@@ -1,37 +1,60 @@
-# Car Rental System – OOPC Mini Project
+### 🚗 Car Rental System
+
+A simple **Car Rental System** built using Object-Oriented Programming Concepts (OOPC) in C++. This project demonstrates step-by-step implementation from blueprint to a fully functional system with booking summary generation.
+
+---
 
 ## 📖 Overview
 
-The **Car Rental System** is a console-based application built in **C++** to demonstrate core **Object-Oriented Programming (OOP)** principles. It simulates a realistic workflow where customers can:
+The Car Rental System allows users to:
 
-* Browse available cars 🚗
-* Take a car on rent for number of days 📅
-* Receive a **detailed billing summary** 💰
+* Browse available cars
+* Book a car by providing details
+* Calculate total rental cost
+* Generate a booking summary stored in a text file
 
-This project applies **Encapsulation, Inheritance, Polymorphism, and Abstraction** in a practical way.
+This project showcases layered implementation through **five demo files**, each adding new OOP concepts and functionality, leading to the final integrated project.
 
 ---
 
 ## ✨ Features
 
-| Feature                | Description                                                                  | Status         |
-| ---------------------- | ---------------------------------------------------------------------------- | -------------- |
-| **User Management**    | Register/login customers with input validation.                              | ✅ Implemented  |
-| **Car Inventory**      | Maintain cars with ID, model, brand, category, fuel, rent/day, availability. | ✅ Implemented  |
-| **Availability Check** | Show only available cars and prevent double booking.                         | ✅ Implemented  |
-| **Booking & Return**   | Pick cars on rent for N days, update status, handle returns.                 | ✅ Implemented  |
-| **Billing**            | Compute total cost with rent/day × days (+optional delivery/taxes).          | ✅ Implemented  |
-| **Booking Summary**    | Generate customer, car, dates, cost, and advance details.                    | ✅ Implemented  |
-| **File Handling**      | Persist customers, cars, and bookings using files.                           | ✅ Implemented  |
-| **Admin Tools**        | Add/edit/remove cars, review bookings, simple reports.                       | 🟡 In Progress |
-| **Future: Database**   | Migrate storage to MySQL/PostgreSQL with schema & queries.                   | 🔜 Planned     |
-| **Future: UI/UX**      | GUI/web frontend, role-based access, dashboards.                             | 🔜 Planned     |
+| Feature             | Description                                                                            |
+| ------------------- | -------------------------------------------------------------------------------------- |
+| 🚙 Car Management   | Create and manage different car models with attributes like brand, fuel type, category |
+| 👤 Customer Details | Store and manage customer details (name, contact, address)                             |
+| 📅 Rental System    | Calculate rental cost based on number of days                                          |
+| 🧾 Booking Summary  | Generate a detailed booking summary in a `.txt` file                                   |
+| 💾 File Handling    | Save booking details for record-keeping                                                |
 
 ---
 
-## 🖥️ Sample Booking Summary
+## 📂 Project Structure
 
-```txt
+```
+car-rental-system/
+│── demo1.cpp              # Blueprint: basic Car class + simple print
+│── demo2.cpp              # Add Customer class + simple booking link
+│── demo3.cpp              # Add multiple cars + availability check
+│── demo4.cpp              # Add billing system + rental days logic
+│── demo5.cpp              # Add booking summary + file handling
+│── main.cpp               # Final integrated project file
+│── booking_summary.txt    # Auto-generated booking summary output
+│── README.md              # Project documentation
+```
+
+---
+
+## 🛠️ Technologies Used
+
+* **Language**: C++
+* **Concepts**: OOP (Classes, Objects, Inheritance, Polymorphism, Encapsulation, File Handling)
+
+---
+
+## 📊 Example Booking Summary
+
+```
 ----- Booking Summary -----
 Customer Name: Pranav Oswal
 Contact: 9988776655
@@ -51,58 +74,31 @@ Booking Time: Sun Aug 24 12:39:44 2025
 
 ---
 
-## ⚙️ How to Run
+## 🤝 Contributing
 
-```bash
-git clone https://github.com/your-username/car-rental-system.git
-cd car-rental-system
-g++ main.cpp -o car_rental
-./car_rental
-```
+Pull requests are welcome! If you'd like to improve or add new features to the system, feel free to fork the repo and submit your suggestions.
 
 ---
 
-## 🔑 OOP Concepts Used
+## ✍️ Authors
 
-* **Encapsulation** – Private fields with getters/setters for `Car`, `Customer`.
-* **Inheritance** – `User` → `Customer`, `Admin`.
-* **Polymorphism** – Pricing rules per category (e.g., Imported vs Local).
-* **Abstraction** – Methods like `rentCar()`, `returnCar()`, `calculateBill()`.
+Made with 💻 and ❤️ by -
 
----
-
-## 📂 File Structure
-
-```
-car-rental-system/
-│── demo1.cpp              # Blueprint: basic Car class + simple print
-│── demo2.cpp              # Add Customer class + simple booking link
-│── demo3.cpp              # Add multiple cars + availability check
-│── demo4.cpp              # Add billing system + rental days logic
-│── demo5.cpp              # Add booking summary + file handling
-│── main.cpp               # Final integrated project file
-│── booking_summary.txt    # Auto-generated booking summary output
-│── README.md              # Project documentation
-
-```
+* Pranav Oswal
+* Aneesh Ojha
+* Piyush Ahir
+* Siddhay Bhole
 
 ---
 
-## 🚀 Future Enhancements
+## 🚀 Future Improvements
 
-* Integration with **MySQL/PostgreSQL** for scalable storage.
-* Development of a **GUI / Web frontend** for better usability.
-* Advanced **reporting & analytics** for admins.
-* Role-based access and authentication.
+* Add payment gateway integration
+* Build a GUI interface
+* Add database connectivity for storing booking records
 
 ---
 
-Made with 💻 and ❤️ by
+## 📜 License
 
-Pranav Oswal
-
-Aneesh Ojha
-
-Piyush Ahir
-
-Siddhay Bhole
+This project is open source and available under the [MIT License](LICENSE).
