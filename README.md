@@ -1,76 +1,70 @@
-### 🚗 Car Rental System
+# 🚗 Car Rental System
 
-A simple **Car Rental System** built using Object-Oriented Programming Concepts (OOPC) in C++. This project demonstrates step-by-step implementation from blueprint to a fully functional system with booking summary generation.
+A simple **Car Rental System** built using **Object-Oriented Programming Concepts (OOPC) in C++**. This project demonstrates a **step-by-step layered implementation** from blueprint to a fully functional system with **booking summary generation**.
 
 ---
 
 ## 📖 Overview
 
-The Car Rental System allows users to:
+The **Car Rental System** allows users to:
 
-* Browse available cars
-* Book a car by providing details
-* Calculate total rental cost
-* Generate a booking summary stored in a text file
+* 🔍 Browse available cars
+* 📝 Book a car by providing details
+* 💰 Calculate total rental cost
+* 📄 Generate a booking summary stored in a text file
 
-This project showcases layered implementation through **five demo files**, each adding new OOP concepts and functionality, leading to the final integrated project.
-
----
-
-## ✨ Features
-
-| Feature             | Description                                                                            |
-| ------------------- | -------------------------------------------------------------------------------------- |
-| 🚙 Car Management   | Create and manage different car models with attributes like brand, fuel type, category |
-| 👤 Customer Details | Store and manage customer details (name, contact, address)                             |
-| 📅 Rental System    | Calculate rental cost based on number of days                                          |
-| 🧾 Booking Summary  | Generate a detailed booking summary in a `.txt` file                                   |
-| 💾 File Handling    | Save booking details for record-keeping                                                |
+This project is structured into **five demo files**, where each demo introduces new **OOP concepts** and adds functionality, leading to the **final integrated project**.
 
 ---
 
 ## 📂 Project Structure
 
 ```
-car-rental-system/
-│── demo1.cpp              # Blueprint: basic Car class + simple print
-│── demo2.cpp              # Add Customer class + simple booking link
-│── demo3.cpp              # Add multiple cars + availability check
-│── demo4.cpp              # Add billing system + rental days logic
-│── demo5.cpp              # Add booking summary + file handling
-│── main.cpp               # Final integrated project file
-│── booking_summary.txt    # Auto-generated booking summary output
-│── README.md              # Project documentation
+Car-Rental-System/
+│
+├── demo1.cpp       # Basic blueprint implementation
+├── demo2.cpp       # Added new OOP concepts
+├── demo3.cpp       # Extended functionality
+├── demo4.cpp       # Further refinements
+├── demo5.cpp       # Final integrated system
+│
+├── booking_summary.txt   # Auto-generated booking summary
+├── main.cpp              # Main project file
+└── README.md             # Project documentation
 ```
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Features
 
-* **Language**: C++
-* **Concepts**: OOP (Classes, Objects, Inheritance, Polymorphism, Encapsulation, File Handling)
+| Feature             | Description                                                       |
+| ------------------- | ----------------------------------------------------------------- |
+| 🚘 Browse Cars      | View available cars with details like model, brand, and fuel type |
+| 📝 Booking          | Enter customer details and reserve a car                          |
+| 💰 Cost Calculation | Automatically calculates rental and delivery charges              |
+| 📄 Summary File     | Generates a text file with full booking details                   |
+| 🧩 Layered Learning | Each demo builds upon the previous step with more OOP concepts    |
 
 ---
 
-## 📊 Example Booking Summary
+## 🚀 How to Run
 
-```
------ Booking Summary -----
-Customer Name: Pranav Oswal
-Contact: 9988776655
-Address: Dhankawdi Pune
-Car ID: I01
-Car Model: Audi A8
-Brand: Audi
-Fuel Type: Petrol
-Category: Imported
-Rental Days: 45
-Delivery Days: 7
-Final Cost: Rs63483.8
-Advance Paid: Rs50000
-Booking Time: Sun Aug 24 12:39:44 2025
----------------------------
-```
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/Car-Rental-System.git
+   ```
+2. Navigate to the folder:
+
+   ```bash
+   cd Car-Rental-System
+   ```
+3. Compile and run:
+
+   ```bash
+   g++ demo5.cpp -o car_rental
+   ./car_rental
+   ```
 
 ---
 
@@ -91,14 +85,8 @@ Made with 💻 and ❤️ by -
 
 ---
 
-## 🚀 Future Improvements
+## 🏆 Acknowledgements
 
-* Add payment gateway integration
-* Build a GUI interface
-* Add database connectivity for storing booking records
-
----
-
-## 📜 License
-
-This project is open source and available under the [MIT License](LICENSE).
+* C++ OOP concepts (Encapsulation, Inheritance, Polymorphism)
+* File handling for generating summaries
+* Hands-on implementation for better understanding of OOP
