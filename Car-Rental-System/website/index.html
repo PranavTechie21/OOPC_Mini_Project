@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Rental System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>🚗 Car Rental System</h1>
+      <nav>
+        <a href="#cars">Cars</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Rent your next car with ease</h2>
+      <p>Electric and Petrol cars. Flexible rentals. Transparent pricing.</p>
+      <button id="viewCarsBtn">View Available Cars</button>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="cars" class="card">
+      <h3>Available Cars</h3>
+      <div id="carsList" class="grid"></div>
+    </section>
+
+    <section id="features" class="card">
+      <h3>Why Choose Us</h3>
+      <ul class="features">
+        <li>Wide selection: EV and Petrol</li>
+        <li>Monthly discounts and offers</li>
+        <li>Fast delivery options</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h3>Contact</h3>
+      <p>Email: support@example.com</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Car Rental System</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
