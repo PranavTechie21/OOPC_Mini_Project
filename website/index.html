@@ -3,53 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Car Rental System</title>
+  <title>Luxury Auto Rentals</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <h1>🚗 Car Rental System</h1>
+      <h1><a href="#">LUXURY AUTO RENTALS</a></h1>
       <nav>
-        <a href="#cars">Cars</a>
-        <a href="#features">Features</a>
+        <a href="#featured">Featured</a>
+        <a href="#cars">Collection</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero" style="background-image: url('car2.jpg');">
+    <div class="hero-overlay"></div>
     <div class="container">
-      <h2>Rent your next car with ease</h2>
-      <p>Electric and Petrol cars. Flexible rentals. Transparent pricing.</p>
-      <button id="viewCarsBtn">View Available Cars</button>
+      <h2>Experience The Drive of a Lifetime</h2>
+      <p>Your gateway to the world's most exclusive supercars and luxury vehicles.</p>
+      <button id="viewCarsBtn" class="btn-primary">View Our Collection</button>
     </div>
   </section>
 
   <main class="container">
-    <section id="cars" class="card">
-      <h3>Available Cars</h3>
-      <div id="carsList" class="grid"></div>
+    <section id="featured" class="card-section">
+      <h3>Featured Vehicles</h3>
+      <div id="featuredCars" class="grid-cars"></div>
     </section>
-
-    <section id="features" class="card">
-      <h3>Why Choose Us</h3>
-      <ul class="features">
-        <li>Wide selection: EV and Petrol</li>
-        <li>Monthly discounts and offers</li>
-        <li>Fast delivery options</li>
-      </ul>
+    
+    <section id="cars" class="card-section">
+      <h3>The Luxury Collection</h3>
+      <div id="carsList" class="grid-cars"></div>
     </section>
-
-    <section id="contact" class="card">
-      <h3>Contact</h3>
-      <p>Email: support@example.com</p>
+    
+    <section id="contact" class="card-section">
+      <h3>Contact Us</h3>
+      <p>For inquiries and reservations, please email us:</p>
+      <p class="contact-email">reservations@luxuryautorentals.com</p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Car Rental System</p>
+      <p>&copy; <span id="year"></span> Luxury Auto Rentals. All Rights Reserved.</p>
     </div>
   </footer>
 
